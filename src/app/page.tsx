@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { signOut } from "next-auth/react";
 
 export default function Home() {
   return (
@@ -14,6 +15,13 @@ export default function Home() {
           </li>
           <li>
             <Link href="/contact">Contact</Link>
+          </li>
+          <li
+            onClick={() => {
+              signOut();
+            }}
+          >
+            Sign out
           </li>
         </ul>
       </div>
