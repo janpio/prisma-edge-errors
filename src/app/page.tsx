@@ -16,12 +16,8 @@ export default function Home() {
           <li>
             <Link href="/contact">Contact</Link>
           </li>
-          <li
-            onClick={() => {
-              signOut();
-            }}
-          >
-            Sign out
+          <li>
+            <Link href="/api/auth/signout">Sign out</Link>
           </li>
         </ul>
       </div>
