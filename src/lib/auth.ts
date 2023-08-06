@@ -18,6 +18,7 @@ export const authOptions: NextAuthConfig = {
           email: token.email,
         },
       });
+      console.log({ dbUser })
 
       if (!dbUser) {
         if (user) {
