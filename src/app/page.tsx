@@ -17,7 +17,9 @@ export default function Home() {
             <Link href="/contact">Contact</Link>
           </li>
           <li>
-            <Link href="/api/auth/signout">Sign out</Link>
+            <Link href="/api/auth/signout" prefetch={false}>
+              Sign out
+            </Link>
           </li>
         </ul>
       </div>
