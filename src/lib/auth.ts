@@ -33,6 +33,9 @@ export const authOptions: NextAuthConfig = {
         image: dbUser.image,
       };
     },
+    redirect() {
+      return "/";
+    },
     authorized({ auth }) {
       return !!auth?.user; // this ensures there is a logged in user for -every- request
     },
